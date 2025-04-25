@@ -6,8 +6,6 @@
 
 * ターミナル：Windows Terminal
 
-* git clone 不可環境のため、プラグインは zip でダウンロードし手動配置
-
 ユーザープロファイルフォルダを極力使用せず、環境変数により各種ディレクトリを指定します。
 
 ### ✅ 設定する環境変数（PowerShell 例）
@@ -16,7 +14,8 @@
 $env:XDG_CONFIG_HOME = "C:\var\nvim-config"
 $env:XDG_DATA_HOME   = "C:\var\nvim-data"
 $env:XDG_CACHE_HOME  = "C:\var\nvim-cache"
-
+$env:XDG_STATE_HOME = "C:\var\nvim-state"
+```
 
 
 ### 📁 フォルダ構成（例）

@@ -2,11 +2,12 @@
 vim.g.mapleader = " "
 vim.opt.number = true
 vim.opt.syntax = "on"
-
+vim.opt.signcolumn = "yes"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 vim.opt.fileencodings = "utf-8,sjis,euc-jp"
 vim.opt.bomb = false
+
 
 -- 環境変数から `XDG_CONFIG_HOME` を取得して `runtimepath` に lazy.nvim を追加
 local config_home = vim.env.XDG_CONFIG_HOME or vim.fn.stdpath("config")

@@ -15,30 +15,27 @@ return {
       { "Shougo/pum.vim", lazy = false },
     },
     config = function()
-      local capabilities = require("ddc_source_lsp").make_client_capabilities()
-      require("lspconfig").denols.setup({
-	      capabilities = capabilities,
-      })
+	    require("ddc_source_lsp_setup").setup()
 
       vim.fn["ddc#custom#patch_global"]({
-        ui = "pum",
-        sources = { "lsp", "around" },
-        sourceOptions = {
-          _ = {
-            matchers = { "matcher_head" },
-            sorters = { "sorter_rank" },
-            converters = { "converter_remove_overlap" },
-	    minAutoCompleteLength = 0,
-	    minManualCompleteLength = 0,
-	    -- keywordPattern = [[[\k\.]\+]]
-          },
-	  lsp = {
-		  mark = "[lsp]"
-	  },
-	  around = {
-		  mark = "[ard]"
-	  }
-        },
+	      ui = "pum",
+	      sources = { "lsp", "around" },
+	      sourceOptions = {
+		      _ = {
+			      matchers = { "matcher_head" },
+			      sorters = { "sorter_rank" },
+			      converters = { "converter_remove_overlap" },
+			      minAutoCompleteLength = 1,
+			      minManualCompleteLength = 0,
+			      keywordPattern = [[\k+]]
+		      },
+		      lsp = {
+			      mark = "[lsp]",
+		      },
+		      around = {
+			      mark = "[ard]"
+		      }
+	      },
       })
 
 
@@ -49,6 +46,12 @@ return {
 		vim.fn["ddc#enable"]()
 	end
       })
+
+      vim.keymap.set("i", "<C-n>","<Cmd>call pum#map#insert_relative(+1)<CR>", {})
+      vim.keymap.set("i", "<C-p>","<Cmd>call pum#map#insert_relative(-1)<CR>", {})
+      vim.keymap.set("i", "<C-y>", "<Cmd>call pum#map#confirm()<CR>", {})
+      vim.keymap.set("i", "<C-e>", "<Cmd>call pum#map#cancel()<CR>", {})
+
     end
   }
 }

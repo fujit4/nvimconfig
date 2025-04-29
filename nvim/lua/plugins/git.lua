@@ -28,6 +28,10 @@ return {
     end
   },
 
+  {
+	  "nvim-lua/plenary.nvim"
+  },
+
   -- diffview: 大きな差分や履歴を詳細に見る
   {
     "sindrets/diffview.nvim",

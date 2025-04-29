@@ -30,11 +30,10 @@ return {
 
 		-- キーマッピング（Shell用）
 		vim.keymap.set('n', '<Space>s', function()
-			local winid = vim.fn.win_getid()	
+			local winid = vim.fn.win_getid()
 			vim.fn['ddt#start']({
 				name = 'shell-' .. winid,
 				ui = 'shell',
-				cwd = clean_path(cwd),
 			})
 		end, { desc = 'Start ddt shell' })
 

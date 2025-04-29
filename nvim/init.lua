@@ -7,7 +7,8 @@ vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 vim.opt.fileencodings = "utf-8,sjis,euc-jp"
 vim.opt.bomb = false
-
+vim.o.tabstop = 4       -- 画面上のTab幅（見た目）
+vim.o.shiftwidth = 4    -- 自動インデント時の幅
 
 -- 環境変数から `XDG_CONFIG_HOME` を取得して `runtimepath` に lazy.nvim を追加
 local config_home = vim.env.XDG_CONFIG_HOME or vim.fn.stdpath("config")

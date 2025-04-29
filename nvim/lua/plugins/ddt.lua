@@ -12,9 +12,6 @@ return {
 		local cache_home = vim.fn.stdpath("cache")
 		local  history_file = vim.fn.fnamemodify(cache_home .. "/ddt/shell-history.txt", ":p"):gsub("\\", "/")
 
-
-		print("Current Working Directory: " .. clean_path(cwd))
-
 		vim.fn['ddt#custom#patch_global']({
 			ui = 'shell',
 			uiParams = {

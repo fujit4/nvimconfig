@@ -36,7 +36,6 @@ return {
 	vim.keymap.set('n', '<leader>c', vim.lsp.buf.code_action, { noremap = true, silent = true })
 
 
-
     end,
   },
 }

@@ -9,15 +9,6 @@
   "ddt-ui-shell": { "branch": "main", "commit": "5e803d8aa2fa51822076aff6e28850e842af8b4d" },
   "ddt-ui-terminal": { "branch": "main", "commit": "eda873c91bf77e9d1d4da71b4015d1ce977f3da9" },
   "ddt.vim": { "branch": "main", "commit": "2da3b437499d1c4e5efb709343adc7fa66df2ac9" },
-  "ddu-filter-matcher_substring": { "branch": "main", "commit": "2f4c64130d3143a1e18352be8c84857cb025a8b4" },
-  "ddu-filter-sorter_alpha": { "branch": "main", "commit": "91df49ceed7cf344b166016fe0a1ca911a709d05" },
-  "ddu-kind-file": { "branch": "main", "commit": "615eeaa2033166f76f28c40ad6eb4fff1aaf84db" },
-  "ddu-source-buffer": { "branch": "main", "commit": "1c98710753160bcd6e18f71236e8f96d4cbd00a5" },
-  "ddu-source-file_old": { "branch": "main", "commit": "33ac9f3910f805e6f4eef97851da931be2ee1c09" },
-  "ddu-source-file_rec": { "branch": "main", "commit": "32f16fb90aa805ed16ea10dcbb347e1ae7b054a6" },
-  "ddu-source-register": { "branch": "main", "commit": "94c71a4193ff30d7d80b6076fb39b94f5cf10fe3" },
-  "ddu-ui-ff": { "branch": "main", "commit": "f7948020f912789e92bc063cd132a7b3847b5a24" },
-  "ddu.vim": { "branch": "main", "commit": "44ec3d5b801c3b93eb36b2dd602905f4f397d0e0" },
   "denops.vim": { "branch": "main", "commit": "4ff8f353ee54ee67288c1099242444ccb0ab5b69" },
   "diffview.nvim": { "branch": "main", "commit": "4516612fe98ff56ae0415a259ff6361a89419b0a" },
   "gitsigns.nvim": { "branch": "main", "commit": "8dec8da8ed8a4463cc6abcd3cc3801373600767d" },
@@ -26,5 +17,6 @@
   "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },
   "nvim-lspconfig": { "branch": "master", "commit": "2e3f389aa06c7b7c29600ec2e67ee64c332077eb" },
   "nvim-web-devicons": { "branch": "master", "commit": "50b5b06bff13a9b4eab946de7c7033649a6618a1" },
-  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" }
+  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
+  "telescope.nvim": { "branch": "master", "commit": "a4ed82509cecc56df1c7138920a1aeaf246c0ac5" }
 }

@@ -19,15 +19,24 @@ return {
       end
     end
 
-    require("telescope").setup({
-      defaults = {
-        mappings = {
-          n = {
-            ["s"] = open_with_system_editor,
-          },
-        },
-      },
-    })
+	require("telescope").setup({
+		defaults = {
+			layout_strategy = "bottom_pane",
+			layout_config = {
+				height = 0.5,
+				prompt_position = "top",
+			},
+			sorting_strategy = "ascending",
+			previewer = false,
+			mappings = {
+				n = {
+					["s"] = open_with_system_editor,
+					["<Esc>"] = false,           -- Esc 無効化
+					["q"] = actions.close,       -- q で閉じる
+				},
+			},
+		},
+	})
 
  	-- キーマッピング
 	local builtin = require("telescope.builtin")

@@ -35,12 +35,6 @@ return {
       }),
     })
 
-    -- LSPサーバーにcapabilitiesを渡す設定も必要
-    local capabilities = require("cmp_nvim_lsp").default_capabilities()
-    require("lspconfig").lua_ls.setup({
-      capabilities = capabilities,
-    })
-    -- 他のLSPも同じ感じで設定すればOK
   end,
 }
 
